@@ -7,6 +7,7 @@
 body {
 	margin: 0;
 	padding: 0;
+	padding-top: 4rem;
 	background-color: white;
 
 	display: flex;
@@ -29,13 +30,21 @@ body {
 	opacity: .6;
 }
 header {
-	padding: 1rem 4.5rem;
+	position: fixed;
+	top: 0;
+	padding: 1rem 10rem;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-
-	box-sizing: border-box;
 	width: 100%;
+	box-sizing: border-box;
+
+	/* background-color: white; */
+	transition: .3s;
+}
+.scrolled {
+	padding: .5rem 1rem;
+	justify-content: space-between;
 }
 #icons {
 	display: flex;
@@ -83,19 +92,41 @@ header {
 	flex-direction: column;
 	align-items: center;
 	justify-content: flex-start;
+	box-sizing: border-box;
 
 	min-height: 80vh;
+	max-width: 100%;
 }
 #content {
 	max-width: 50%;
 }
-.image-tray {
+#content img {
+	max-width: 100%;
+}
+.flex-row {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	flex-wrap: wrap;
 }
-.image-tray img {
+.flex-row img {
+	width: 40%;
 	flex: 1;
+}
+.flex-row p {
+	width: 40%;
+}
+#spotify-widgets {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 3rem;
+	padding-top: 1rem;
+
+	max-width: 40%;
+}
+#spotify-widgets iframe {
+	padding: 1rem;
 }
 h1 {
 	font-size: 3rem;
@@ -121,6 +152,15 @@ footer {
 footer span {
 	margin: 0 .3rem;
 }
+
+
+.preload * {
+	-webkit-transition: none !important;
+	-moz-transition: none !important;
+	-ms-transition: none !important;
+	-o-transition: none !important;
+	transition: none !important;
+}
 @font-face {
 	font-family: roboto;
 	src: url("fonts/roboto/Roboto-Regular.ttf")
@@ -128,5 +168,13 @@ footer span {
 @media only screen and (max-width: 720px) {
 	:root {
 		font-size: 4vmin;
+	}
+	header {
+		padding: 1rem 2rem;
+		background-color: white;
+	}
+	.scrolled {
+		box-shadow: 0 0.02rem 0.5rem lightgrey;
+		padding: .3rem 2rem;
 	}
 }
