@@ -1,0 +1,79 @@
+:root {
+	/* font-size: 3vmin; */
+	font-size: 1.6rem;
+	font-family: roboto;
+}
+body {
+	margin: 0;
+	padding: 0;
+	background-color: white;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+
+	width: 100%;
+	height: 100%;
+}
+header {
+	padding: 1rem 4.5rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	box-sizing: border-box;
+	width: 100%;
+}
+#icons {
+	display: flex;
+}
+#icons a img {
+	width: 2rem;
+	height: 2rem;
+	margin: .3rem;
+	transition: .3s;
+	-webkit-backface-visibility: hidden;
+	outline: 1px solid transparent;
+	user-select: none;
+}
+#icons a img:hover {
+	transform: scale(1.05);
+	box-shadow: black;
+}
+
+#booking-btn {
+	display: block;
+	border: 1px solid #1ED760;
+	border-radius: 9999px;
+	text-decoration: none;
+	color: #1ED760;
+	font-size: .6rem;
+	padding: .5rem 1rem;
+
+	transition: .2s;
+}
+#booking-btn:hover {
+	background-color: #1ED760;
+	color: white;
+}
+
+#main {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+h3 {
+	font-size: 3rem;
+
+}
+@font-face {
+	font-family: roboto;
+	src: url("fonts/roboto/Roboto-Regular.ttf")
+}
+@media only screen and (max-width: 720px) {
+	:root {
+		font-size: 4vmin;
+	}
+}
