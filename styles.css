@@ -16,6 +16,18 @@ body {
 
 	min-height: 100vh;
 }
+#background {
+	z-index: -1;
+	position: absolute;
+	display: block;
+	padding: 0;
+	margin: 0;
+	top: 0;
+	width: 100%;
+	box-sizing: border-box;
+	height: auto;
+	opacity: .6;
+}
 header {
 	padding: 1rem 4.5rem;
 	display: flex;
@@ -28,7 +40,7 @@ header {
 #icons {
 	display: flex;
 }
-#icons a img {
+.icon img {
 	width: 2rem;
 	height: 2rem;
 	margin: .3rem;
@@ -37,7 +49,7 @@ header {
 	outline: 1px solid transparent;
 	user-select: none;
 }
-#icons a img:hover {
+.icon img:hover {
 	transform: scale(1.05);
 	box-shadow: black;
 }
@@ -58,6 +70,14 @@ header {
 	color: white;
 }
 
+
+#title {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	padding: 2rem;
+}
 #main {
 	display: flex;
 	flex-direction: column;
@@ -69,9 +89,21 @@ header {
 #content {
 	max-width: 50%;
 }
-h3 {
+.image-tray {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.image-tray img {
+	flex: 1;
+}
+h1 {
 	font-size: 3rem;
 	color: black;
+	margin: .3rem;
+}
+h3 {
+	font-weight: normal;
 }
 footer {
 	margin-top: 2.5rem;
