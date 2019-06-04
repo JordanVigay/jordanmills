@@ -192,6 +192,10 @@ footer {
 footer span {
 	margin: 0 .3rem;
 }
+footer > span > a {
+	color: inherit;
+	font-size: inherit;
+}
 img {
 	display: block;
 }
