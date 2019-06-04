@@ -1,6 +1,6 @@
 :root {
 	/* font-size: 3vmin; */
-	font-size: 1.6rem;
+	font-size: 2.6vmin;
 	font-family: roboto;
 	color: #717171
 }
@@ -16,6 +16,7 @@ body {
 	align-items: center;
 
 	min-height: 100vh;
+	box-sizing: border-box;
 }
 #background {
 	z-index: -1;
@@ -27,27 +28,54 @@ body {
 	width: 100%;
 	box-sizing: border-box;
 	height: auto;
-	opacity: .6;
+	opacity: .8;
 }
 header {
 	position: fixed;
 	top: 0;
-	padding: 1rem 10rem;
+	padding: 1rem;
 	display: flex;
 	justify-content: space-between;
+	/* justify-content: center; */
 	align-items: center;
-	width: 100%;
+	width: 70%;
 	box-sizing: border-box;
 
 	/* background-color: white; */
 	transition: .3s;
 }
+#heading {
+	display: block;
+	color: black;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 1.5rem;
+	padding: 0;
+	margin: 0;
+	transition: .3s;
+}
+/* #spacer {
+	width: 20vw;
+	height: 10px;
+} */
 .scrolled {
 	padding: .5rem 1rem;
-	justify-content: space-between;
+	width: 100%;
+}
+.scrolled #booking-btn {
+	justify-content: flex-end;
+}
+.scrolled #heading {
+	opacity: 0;
+}
+header div {
+	display: flex;
+	/* justify-content: flex-start; */
+	justify-content: center;
+	width: 10.4rem;
 }
 #icons {
-	display: flex;
+	flex-direction: row-reverse;
 }
 .icon img {
 	width: 2rem;
@@ -63,7 +91,7 @@ header {
 	box-shadow: black;
 }
 
-#booking-btn {
+.green-btn {
 	display: block;
 	border: 1px solid #1ED760;
 	border-radius: 9999px;
@@ -74,7 +102,7 @@ header {
 
 	transition: .2s;
 }
-#booking-btn:hover {
+.green-btn:hover {
 	background-color: #1ED760;
 	color: white;
 }
@@ -94,8 +122,9 @@ header {
 	justify-content: flex-start;
 	box-sizing: border-box;
 
-	min-height: 80vh;
+	/* smin-height: 20vh; */
 	max-width: 100%;
+	margin-bottom: 2.5rem;
 }
 #content {
 	max-width: 50%;
@@ -106,28 +135,31 @@ header {
 .flex-row {
 	display: flex;
 	align-items: center;
-	justify-content: center;
-	flex-wrap: wrap;
+	justify-content: space-evenly;
+	max-width: 100%;
+	/* flex-wrap: wrap; */
 }
-.flex-row img {
-	width: 40%;
+.flex-row * {
 	flex: 1;
+	padding: .5rem;
 }
-.flex-row p {
-	width: 40%;
-}
-#spotify-widgets {
+.flex-column {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	padding: 3rem;
-	padding-top: 1rem;
-
-	max-width: 40%;
+	justify-content: space-evenly;
+	max-width: 100%;
+	/* flex-wrap: wrap; */
 }
-#spotify-widgets iframe {
-	padding: 1rem;
+.flex-column * {
+	flex: 1;
 }
+/* img {
+	width: auto;
+	height: auto;
+	max-width: 100%;
+	max-height: 100%;
+} */
 h1 {
 	font-size: 3rem;
 	color: black;
@@ -137,7 +169,6 @@ h3 {
 	font-weight: normal;
 }
 footer {
-	margin-top: 2.5rem;
 	font-size: .6rem;
 	background-color: #dddddd;
 	color: #888888;
@@ -153,7 +184,6 @@ footer span {
 	margin: 0 .3rem;
 }
 
-
 .preload * {
 	-webkit-transition: none !important;
 	-moz-transition: none !important;
@@ -165,7 +195,7 @@ footer span {
 	font-family: roboto;
 	src: url("fonts/roboto/Roboto-Regular.ttf")
 }
-@media only screen and (max-width: 720px) {
+@media only screen and (max-width: 1170px) {
 	:root {
 		font-size: 4vmin;
 	}
