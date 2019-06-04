@@ -61,7 +61,7 @@ header {
 	padding: .5rem 1rem;
 	width: 100%;
 }
-.scrolled #booking-btn {
+.scrolled #booking-btn, .scolled #back-btn {
 	justify-content: flex-end;
 }
 .scrolled #heading {
@@ -157,7 +157,7 @@ header div {
 	align-items: center;
 	justify-content: space-evenly;
 	max-width: 100%;
-	/* flex-wrap: wrap; */
+	flex-wrap: wrap;
 }
 .flex-row * {
 	flex: 1;
@@ -222,11 +222,24 @@ footer span {
 		font-size: 4vmin;
 	}
 	header {
-		padding: 1rem 2rem;
+		padding: .3rem 1rem;
 		background-color: white;
+		width: 100%;
+	}
+	#booking-btn, #back-btn {
+		justify-content: flex-end;
 	}
 	.scrolled {
 		box-shadow: 0 0.02rem 0.5rem lightgrey;
-		padding: .3rem 2rem;
+		/* padding: .3rem 2rem; */
+	}
+	.scrolled #heading {
+		opacity: 1;
+	}
+	/* .scrolled #booking-btn, .scrolled #back-btn {
+		justify-content: center;
+	} */
+	#content {
+		max-width: 80%;
 	}
 }
