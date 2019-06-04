@@ -1,5 +1,4 @@
 :root {
-	/* font-size: 3vmin; */
 	font-size: 2.6vmin;
 	font-family: roboto;
 	color: #717171
@@ -35,12 +34,11 @@ header {
 	padding: 1rem;
 	display: flex;
 	justify-content: space-between;
-	/* justify-content: center; */
+	
 	align-items: center;
 	width: 70%;
 	box-sizing: border-box;
 
-	/* background-color: white; */
 	transition: .3s;
 }
 #heading {
@@ -53,10 +51,7 @@ header {
 	margin: 0;
 	transition: .3s;
 }
-/* #spacer {
-	width: 20vw;
-	height: 10px;
-} */
+
 .scrolled {
 	padding: .5rem 1rem;
 	width: 100%;
@@ -69,7 +64,6 @@ header {
 }
 header div {
 	display: flex;
-	/* justify-content: flex-start; */
 	justify-content: center;
 	width: 10.4rem;
 }
@@ -134,9 +128,7 @@ header div {
 	flex-direction: column;
 	align-items: center;
 	justify-content: flex-start;
-	/* box-sizing: border-box; */
 
-	/* smin-height: 20vh; */
 	max-width: 100%;
 	margin: 2rem;
 	margin-top: 4rem;
@@ -155,7 +147,7 @@ header div {
 .flex-row {
 	display: flex;
 	align-items: center;
-	justify-content: space-evenly;
+	justify-content: space-between;
 	max-width: 100%;
 	flex-wrap: wrap;
 }
@@ -167,9 +159,9 @@ header div {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	justify-content: space-evenly;
+	justify-content: space-between;
 	max-width: 100%;
-	/* flex-wrap: wrap; */
+	height: 100%;
 }
 .flex-column * {
 	flex: 1;
@@ -228,14 +220,12 @@ img {
 	}
 	.scrolled {
 		box-shadow: 0 0.02rem 0.5rem lightgrey;
+		padding: .1rem 1rem;
 		/* padding: .3rem 2rem; */
 	}
 	.scrolled #heading {
 		opacity: 1;
 	}
-	/* .scrolled #booking-btn, .scrolled #back-btn {
-		justify-content: center;
-	} */
 	#content {
 		max-width: 80%;
 	}
