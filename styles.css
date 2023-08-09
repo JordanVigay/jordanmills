@@ -233,6 +233,9 @@ img {
 	#content {
 		max-width: 80%;
 	}
+
+}
+
 /* Style the video: 100% width and height to cover the entire window */
 #myVideo {
   position: fixed;
@@ -266,6 +269,4 @@ img {
 #myBtn:hover {
   background: #ddd;
   color: black;
-}
-
 }
