@@ -241,8 +241,9 @@ img {
   position: fixed;
   right: 0;
   bottom: 0;
-  min-width: 100%;
-  min-height: 100%;
+  min-width: 50%;
+  min-height: 50%;
+object-fit: contain;
 }
 
 /* Add some content at the bottom of the video/page */
@@ -270,3 +271,6 @@ img {
   background: #ddd;
   color: black;
 }
+
+
+
