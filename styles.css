@@ -254,7 +254,8 @@ img {
 .overlayText {
   position: absolute;
   bottom: 20%;
-  align-self: center;
+  left: auto;
+  right: auto;
   z-index: 1;
 
 }
