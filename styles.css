@@ -247,6 +247,7 @@ img {
         height: auto;
         overflow: hidden;
         object-fit: fill;
+	z-index: 0;
 }
 
 
