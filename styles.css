@@ -269,7 +269,7 @@ text-align: center;
 align-self: center;
 }
 
-#centertext {
+.centertext {
   display: block;
   margin-left: auto;
   margin-right: auto;
