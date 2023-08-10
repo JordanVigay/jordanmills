@@ -277,3 +277,22 @@ align-self: center;
   z-index: 2;
 
 }
+
+.button-row {
+	position: absolute;
+	bottom: 20%;
+	left: 50%;
+	transform: translateX(-50%);
+	display: flex;
+	margin: 10px;
+	align-items: center;
+}
+
+.image-button {
+	width: 100px;
+	height: 100px;
+	border: none;
+	border-radius: 50%;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
