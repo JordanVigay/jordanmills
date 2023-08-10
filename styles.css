@@ -275,4 +275,6 @@ align-self: center;
   margin-right: auto;
   width: 50%;
   float: center;
+  z-index: 1;
+
 }
