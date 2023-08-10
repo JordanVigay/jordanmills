@@ -298,5 +298,5 @@ align-self: center;
 }
 
 .image-button:hover {
-	cursor: grab;
+	cursor: pointer;
 }
