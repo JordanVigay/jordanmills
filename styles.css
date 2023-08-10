@@ -299,4 +299,5 @@ align-self: center;
 
 .image-button:hover {
 	cursor: pointer;
+	transition: transform 0.5s ease-in;
 }
