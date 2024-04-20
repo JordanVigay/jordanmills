@@ -280,7 +280,7 @@ align-self: center;
 
 .button-row {
 	position: absolute;
-	bottom: 7%;
+	bottom: 2%;
 	left: 50%;
 	transform: translateX(-50%);
 	display: flex;
