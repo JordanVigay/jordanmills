@@ -313,11 +313,14 @@ body, html {
   overflow-x: hidden; /* Prevent horizontal scroll */
 }
 
-.container {
-  position: relative;
+.video-container {
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100vh;
   overflow: hidden;
+  z-index: -1; /* Ensure the video is in the background */
 }
 
 #myVideo {
@@ -369,4 +372,5 @@ body, html {
   background-size: cover;
   display: inline-block;
 }
+
 
