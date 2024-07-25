@@ -66,7 +66,7 @@ body, html {
     position: relative;
     z-index: 1;
     padding-top: 10px; /* Reduce top padding */
-    margin-top: -150px; /* Move text container up */
+    margin-top: -300px; /* Move text container up */
     color: white;
 }
 
