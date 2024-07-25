@@ -14,7 +14,7 @@ body {
     align-items: center;
     min-height: 100vh;
     box-sizing: border-box;
-    overflow-y: scroll;
+    overflow-y: auto; /* Ensure scrolling if content overflows */
 }
 
 body, html {
@@ -66,29 +66,39 @@ body, html {
     position: relative;
     z-index: 1;
     padding-top: 20px; /* Adjust as necessary */
-    margin-top: -220px; /* Move text container up */
+    margin-top: 20px; /* Adjust to keep content within view */
     color: white;
 }
 
 .gig-list {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    justify-content: center;
     gap: 1em; /* Space between items */
+    align-items: center;
 }
 
 .gig-item {
-    display: flex;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
     align-items: center;
     gap: 1em; /* Space between date, "-" and location */
+    width: 100%;
 }
 
-.date, .location {
-    white-space: nowrap; /* Prevent text from wrapping */
+.date {
+    text-align: right;
+    padding-right: 1em; /* Space between date and "-" */
 }
 
 .divider {
     font-size: 1.2em; /* Adjust size if needed */
+    text-align: center;
+}
+
+.location {
+    text-align: left;
+    padding-left: 1em; /* Space between "-" and location */
 }
 
 .button-row {
