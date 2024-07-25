@@ -70,6 +70,18 @@ body, html {
     color: white;
 }
 
+.gig-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1em; /* Adjust spacing as necessary */
+}
+
+.date,
+.location {
+    margin: 0 1em; /* Adjust spacing as necessary */
+}
+
 .button-row {
     position: absolute;
     bottom: 10px; /* Adjusts the distance of buttons from the bottom */
@@ -96,9 +108,7 @@ body, html {
     height: 100px; /* Adjust size as necessary */
     z-index: 1001;
     transition: opacity 0.3s ease;
-    
 }
-
 
 .fixed-elements {
     position: fixed;
