@@ -72,7 +72,7 @@ body, html {
 
 .button-row {
     position: absolute;
-    bottom: 20px; /* Adjusts the distance of buttons from the bottom */
+    bottom: 10px; /* Adjusts the distance of buttons from the bottom */
     left: 50%;
     transform: translateX(-50%);
     display: flex;
