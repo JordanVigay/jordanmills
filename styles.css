@@ -88,6 +88,17 @@ body, html {
     display: inline-block;
 }
 
+#arrow {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    width: 50px; /* Adjust size as necessary */
+    height: 50px; /* Adjust size as necessary */
+    z-index: 1001;
+    transition: opacity 0.3s ease-in-out;
+}
+
+
 .fixed-elements {
     position: fixed;
     bottom: 0;
