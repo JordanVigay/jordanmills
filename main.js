@@ -16,6 +16,19 @@ function onload() {
 			header.classList.remove("scrolled");
 			// spacer.style.width = "";
 		}
+	document.addEventListener('DOMContentLoaded', (event) => {
+    	const arrow = document.getElementById('arrow');
+
+    	window.addEventListener('scroll', () => {
+        	if (window.scrollY > 20) {
+            		arrow.style.opacity = '0';
+        	} else {
+            arrow.style.opacity = '1';
+        }
+    });
+});
+
+	
 	};
 	document.body.onscroll()
 }
