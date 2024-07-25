@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Function to handle scroll event
     function onScroll() {
-        if (window.scrollY > 20) {
+        if (window.scrollY > 10) {
             arrow.style.opacity = '0';
         } else {
             arrow.style.opacity = '1';
