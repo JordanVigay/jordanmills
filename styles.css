@@ -63,11 +63,16 @@ body, html {
 }
 
 .text-container {
-    position: relative;
-    z-index: 1;
-    padding-top: 10px; /* Reduce top padding */
-    margin-top: -300px; /* Move text container up */
+    position: absolute; /* Change to absolute positioning */
+    bottom: 20px; /* Set distance from the bottom */
+    left: 50%;
+    transform: translateX(-50%);
     color: white;
+    z-index: 1; /* Ensure it is above the video */
+    padding: 0 10px; /* Optional: Add some padding for mobile view */
+    width: 100%; /* Ensure it spans the width of the container */
+    box-sizing: border-box;
+    text-align: center;
 }
 
 .button-row {
