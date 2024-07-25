@@ -1,374 +1,141 @@
 :root {
-	font-size: 1.5rem;
-	font-family: roboto;
-	color: #717171
+    font-size: 1.5rem;
+    font-family: roboto;
+    color: #717171;
 }
+
 body {
-	margin: 0;
-	padding: 0;
-	background-color: black;
-
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	align-items: center;
-
-	min-height: 100vh;
-	box-sizing: border-box;
-
-	overflow-y: scroll;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 100vh;
+    box-sizing: border-box;
+    overflow-y: scroll;
 }
-#background {
-	z-index: -1;
-	position: absolute;
-	display: block;
-	padding: 0;
-	margin: 0;
-	top: 0;
-	width: 100%;
-	box-sizing: border-box;
-	height: auto;
-	opacity: .8;
-}
-header {
-	position: fixed;
-	top: 0;
-	padding: 1rem;
-	display: flex;
-	justify-content: space-between;
-	
-	align-items: center;
-	width: 70%;
-	box-sizing: border-box;
-
-	transition: .3s;
-}
-#heading {
-	display: block;
-	color: black;
-	text-decoration: none;
-	font-weight: bold;
-	font-size: 1.5rem;
-	padding: 0;
-	margin: 0;
-	transition: .3s;
-}
-
-.scrolled {
-	padding: .5rem 1rem;
-	width: 100%;
-}
-.scrolled #booking-btn, .scolled #back-btn {
-	justify-content: flex-end;
-}
-.scrolled #heading {
-	opacity: 0;
-}
-header div {
-	display: flex;
-	justify-content: center;
-	width: 10.4rem;
-}
-#icons {
-	flex-direction: row-reverse;
-}
-.icon img {
-	width: 2rem;
-	height: 2rem;
-	margin: .3rem;
-	transition: .3s;
-	-webkit-backface-visibility: hidden;
-	outline: 1px solid transparent;
-	user-select: none;
-}
-.icon img:hover {
-	transform: scale(1.05);
-	box-shadow: black;
-}
-
-.green-btn {
-	display: block;
-	border: 2px solid #1ED760;
-	border-radius: 9999px;
-	text-decoration: none;
-	color: #1ED760;
-	font-size: .6rem;
-	padding: .5rem 1rem;
-	font-weight: bold;
-	transition: .2s;
-}
-.green-btn:hover {
-	background-color: #1ED760;
-	color: white;
-}
-.grey-btn {
-	display: block;
-	border: 2px solid grey;
-	border-radius: 9999px;
-	text-decoration: none;
-	color: grey;
-	font-size: .6rem;
-	padding: .4rem 1rem;
-	font-weight: bold;
-	transition: .2s;
-}
-.grey-btn:hover {
-	background-color: grey;
-	color: white;
-}
-
-
-#title {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-
-	padding: 2rem;
-}
-#main {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: flex-start;
-
-	max-width: 100%;
-	margin: 2rem;
-	margin-top: 4rem;
-}
-#main > div {
-	padding: 1.7rem;
-}
-#content {
-	max-width: 50%;
-	margin-top: 0;
-	padding-top: 0 !important;
-}
-#content img {
-	max-width: 100%;
-}
-.flex-row {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	max-width: 100%;
-	flex-wrap: wrap;
-}
-.flex-row * {
-	flex: 1;
-	padding: .3rem;
-}
-.flex-column {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: space-between;
-	max-width: 100%;
-	height: 100%;
-}
-.flex-column * {
-	flex: 1;
-}
-
-h1 {
-	font-size: 3rem;
-	color: black;
-	margin: .3rem;
-}
-h3 {
-	font-weight: normal;
-	padding: 0;
-	margin: 0;
-}
-footer {
-	font-size: .6rem;
-	background-color: #dddddd;
-	color: #888888;
-
-	box-sizing: border-box;
-	width: 100%;
-	padding: 1rem 4.5rem;
-
-	display: flex;
-	justify-content: center;
-}
-footer span {
-	margin: 0 .3rem;
-}
-footer > span > a {
-	color: inherit;
-	font-size: inherit;
-}
-img {
-	display: block;
-}
-.preload * {
-	-webkit-transition: none !important;
-	-moz-transition: none !important;
-	-ms-transition: none !important;
-	-o-transition: none !important;
-	transition: none !important;
-}
-@font-face {
-	font-family: roboto;
-	src: url("fonts/roboto/Roboto-Regular.ttf")
-}
-@media only screen and (max-width: 1170px) {
-	:root {
-		font-size: 4vmin;
-	}
-	header {
-		padding: .3rem 1rem;
-		background-color: white;
-		width: 100%;
-	}
-	#booking-btn, #back-btn {
-		justify-content: flex-end;
-	}
-	.scrolled {
-		box-shadow: 0 0.02rem 0.5rem lightgrey;
-		padding: .1rem 1rem;
-		/* padding: .3rem 2rem; */
-	}
-	.scrolled #heading {
-		opacity: 1;
-	}
-	#content {
-		max-width: 80%;
-	}
-
-}
-
-/* Style the video: 100% width and height to cover the entire window */
-#myVideo {
- 
-
-	position: absolute;
-        top: 0;
-        bottom: 0;
-        width: 100%;
-        height: auto;
-        overflow: hidden;
-        object-fit: fill;
-	z-index: 0;
-}
-
-
-.overlayText {
-  position: absolute;
-  bottom: 20%;
-  left: 50%;
-  right: 50%;
-  z-index: 1;
-
-}
-
-#topText {
-  color: white;
-  font-size: 20px;
-text-align: center;
-align-self: center;
-}
-
-.centertext {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-  z-index: 2;
-
-}
-
-.button-row {
-	position: absolute;
-	bottom: 2%;
-	left: 50%;
-	transform: translateX(-50%);
-	display: flex;
-	margin: 10px;
-	align-items: center;
-}
-
-.image-button {
-	width: 100px;
-	height: 100px;
-	border: none;
-	border-radius: 50%;
-	background-size: cover;
-	background-repeat: no-repeat;
-	transition: transform 0.4s ease;
-}
-
-.image-button:hover {
-	cursor: pointer;
-	transform: scale(1.1);
-}
-
-/*chatgpt stuff*/
-
-/* Add this CSS to your existing styles.css file */
 
 body, html {
-  height: 100%;
-  margin: 0;
-  overflow-x: hidden; /* Prevent horizontal scroll */
+    height: 100%;
+    margin: 0;
+    overflow-x: hidden; /* Prevent horizontal scroll */
 }
 
 .video-container {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100vh; /* Full viewport height */
-  overflow: hidden;
-  z-index: -1; /* Ensure the video is in the background */
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625 = 56.25%) */
+    overflow: hidden;
 }
 
 #myVideo {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.overlayText {
+    position: absolute;
+    bottom: 20%;
+    left: 50%;
+    right: 50%;
+    z-index: 1;
+}
+
+#topText {
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    align-self: center;
+}
+
+.centertext {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    z-index: 2;
 }
 
 .text-container {
-  position: relative;
-  z-index: 1;
-  padding-top: 100vh; /* Start content after the full height of the video */
-  color: white; /* Ensure text color is white for readability */
-}
-
-.fixed-elements {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  z-index: 1000;
-  pointer-events: none; /* Ensures the fixed elements do not block interaction with content below */
-}
-
-.gradient {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 400px;
-  background-image: linear-gradient(to top, black, transparent);
-  pointer-events: none; /* Ensures the gradient does not block interaction with content below */
+    position: relative;
+    z-index: 1;
+    padding-top: 20px; /* Adjust as necessary */
+    color: white;
 }
 
 .button-row {
-  position: absolute;
-  bottom: 20px; /* Adjusts the distance of buttons from the bottom */
-  left: 50%;
-  transform: translateX(-50%);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  pointer-events: auto; /* Allows interaction with the buttons */
+    position: absolute;
+    bottom: 20px; /* Adjusts the distance of buttons from the bottom */
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    pointer-events: auto; /* Allows interaction with the buttons */
 }
 
 .image-button {
-  width: 100px;  /* Double the previous size */
-  height: 100px; /* Double the previous size */
-  background-size: cover;
-  display: inline-block;
+    width: 100px; /* Adjust size as necessary */
+    height: 100px; /* Adjust size as necessary */
+    background-size: cover;
+    display: inline-block;
+}
+
+.fixed-elements {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    pointer-events: none; /* Ensures the fixed elements do not block interaction with content below */
+}
+
+.gradient {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 400px;
+    background-image: linear-gradient(to top, black, transparent);
+    pointer-events: none; /* Ensures the gradient does not block interaction with content below */
+}
+
+@font-face {
+    font-family: roboto;
+    src: url("fonts/roboto/Roboto-Regular.ttf");
+}
+
+@media only screen and (max-width: 1170px) {
+    :root {
+        font-size: 4vmin;
+    }
+
+    header {
+        padding: .3rem 1rem;
+        background-color: white;
+        width: 100%;
+    }
+
+    #booking-btn, #back-btn {
+        justify-content: flex-end;
+    }
+
+    .scrolled {
+        box-shadow: 0 0.02rem 0.5rem lightgrey;
+        padding: .1rem 1rem;
+    }
+
+    .scrolled #heading {
+        opacity: 1;
+    }
+
+    #content {
+        max-width: 80%;
+    }
 }
