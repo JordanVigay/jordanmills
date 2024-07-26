@@ -12,10 +12,9 @@ body {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    min-height: 200vh;
+    min-height: 100vh;
     box-sizing: border-box;
     overflow-y: scroll;
-    
 }
 
 body, html {
@@ -87,11 +86,11 @@ body, html {
     height: 100px; /* Adjust size as necessary */
     background-size: cover;
     display: inline-block;
-    transition: transform 0.3s ease; /* Add transition for smooth scaling */
+    transition: transform 0.3s ease; /* For smooth hover effect */
 }
 
 .image-button:hover {
-    transform: scale(1.1); /* Enlarge button on hover */
+    transform: scale(1.1); /* Enlarge slightly on hover */
 }
 
 #arrow {
@@ -155,4 +154,10 @@ body, html {
     #content {
         max-width: 80%;
     }
+}
+
+/* New style for the scrollable container */
+.scrollable-container {
+    overflow-y: auto;
+    max-height: 100vh; /* or whatever height you need */
 }
