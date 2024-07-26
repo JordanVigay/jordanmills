@@ -4,29 +4,30 @@
     color: #717171;
 }
 
-body {
+html, body {
     margin: 0;
     padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden; /* Hide the outer scrollbar */
     background-color: black;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
-    min-height: 100vh;
     box-sizing: border-box;
-    overflow-y: scroll;
 }
 
-body, html {
+.scrollable-container {
+    overflow-y: auto;
+    width: 100%;
     height: 100%;
-    margin: 0;
-    overflow-x: hidden; /* Prevent horizontal scroll */
 }
 
 .video-container {
     position: relative;
     width: 100%;
-    padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625 = 56.25%) */
+    padding-top: 56.25%; /* 16:9 Aspect Ratio */
     overflow: hidden;
 }
 
@@ -154,10 +155,4 @@ body, html {
     #content {
         max-width: 80%;
     }
-}
-
-/* New style for the scrollable container */
-.scrollable-container {
-    overflow-y: auto;
-    max-height: 100vh; /* or whatever height you need */
 }
