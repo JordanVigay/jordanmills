@@ -9,10 +9,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Function to handle scroll event
     function onScroll() {
+        console.log('Scroll event detected'); // Log to check if the event is detected
         if (window.scrollY > 10) {
             arrow.style.opacity = '0';
+            console.log('Arrow hidden'); // Log to check if the arrow is hidden
         } else {
             arrow.style.opacity = '1';
+            console.log('Arrow visible'); // Log to check if the arrow is visible
         }
     }
 
