@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function onScroll() {
         const scrollY = window.scrollY;
         console.log(`Scroll event detected: scrollY = ${scrollY}`); // Log the scroll value
-        if (scrollY > 20) {
+        if (scrollY > 10) {
             arrow.style.opacity = '0';
             console.log('Arrow hidden'); // Log to check if the arrow is hidden
         } else {
