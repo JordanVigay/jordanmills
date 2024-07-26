@@ -12,9 +12,10 @@ body {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    min-height: 100vh;
+    min-height: 200vh;
     box-sizing: border-box;
     overflow-y: scroll;
+    
 }
 
 body, html {
