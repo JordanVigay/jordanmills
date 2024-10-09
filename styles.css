@@ -117,16 +117,15 @@ a:hover {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    width: 100px; /* Adjust size as necessary */
+    width: 215px; /* Adjust size as necessary */
     height: 100px; /* Adjust size as necessary */
     z-index: 1001;
     transition: transform 0.3s ease;
     cursor: pointer;
-    transform: scale(0.3);
 }
 
     #booking-btn:hover {
-        transform: scale(0.4); /* Slight zoom on hover */
+        transform: scale(1.1); /* Slight zoom on hover */
     }
 
 .fixed-elements {
