@@ -36,7 +36,7 @@
         /* CSS for centering the box and making it invisible */
             .invisible-box {
                 position: absolute;
-                left: 50%;               /* Position closer to the left edge */
+                left: 43.75%;               /* Position closer to the left edge */
                 transform: translate(-37.5%, -20%); /* Center text within this position */
                 padding: 20px;           /* Space around the text */
                 text-align: center;
@@ -91,6 +91,20 @@
     The Bold Forester</a>, Portsmouth (7pm - 10:30pm)
     <br /><br /><br />
 
+<!-- START CHATGPT ALIGN BIT -->
+                    
+    <style>
+    .gig-entry {
+        display: flex;
+        justify-content: center;
+        gap: 10px; /* Adjust spacing as needed */
+        margin-bottom: 1em; /* Adds space between each gig entry */
+    }
+    .gig-entry span, .gig-entry a {
+        color: white;
+    }
+</style>
+
     <!-- Each gig entry is wrapped in a div with class "gig-entry" -->
     <div class="gig-entry">
         <span>Thursday, 23rd January</span>
@@ -119,17 +133,9 @@
 </p>
 
 <!-- CSS to center-align the dash in each gig-entry -->
-<style>
-    .gig-entry {
-        display: flex;
-        justify-content: center;
-        gap: 10px; /* Adjust spacing as needed */
-        margin-bottom: 1em; /* Adds space between each gig entry */
-    }
-    .gig-entry span, .gig-entry a {
-        color: white;
-    }
-</style>
+
+<!-- END CHATGPT ALIGN BIT -->
+                    
             </div>
         </div>
     </div>
