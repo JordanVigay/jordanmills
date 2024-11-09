@@ -20,7 +20,8 @@ a:hover {
   color: #78D9FF;
 }
 
-#h1 {
+.johnnytitle {
+    position: absolute;
     font-size: 72px;
-    top: 10%;
+    top: 20%;
 }
