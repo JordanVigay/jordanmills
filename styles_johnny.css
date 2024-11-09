@@ -1,0 +1,21 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden; /* Hide the outer scrollbar */
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+a:link, a:visited, a:active {
+  color: #1ABEFF;
+}
+
+a:hover {
+  color: #78D9FF;
+}
