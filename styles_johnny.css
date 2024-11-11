@@ -38,6 +38,12 @@ a:hover {
     left: 150px;
 }
 
+.container2 {
+    position: relative;
+    margin: auto;
+    right: 150px;
+}
+
 #arrow {
     width: 100px;
     height: auto;
