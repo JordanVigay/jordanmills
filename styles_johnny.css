@@ -34,14 +34,14 @@ a:hover {
 
 .container {
     position: relative;
+    margin: auto;
+    left: 150px;
 }
 
 #arrow {
     width: 100px;
     height: auto;
     transform-origin: center center; /* Sets the rotation point to the center */
-    position: relative;
-    margin: auto;
-    left: 200px;
+    position: absolute;
 }
 
