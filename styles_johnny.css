@@ -40,8 +40,8 @@ a:hover {
     width: 100px;
     height: auto;
     transform-origin: center center; /* Sets the rotation point to the center */
-    position: absolute;
+    position: relative;
     margin: auto;
-    left: 50px;
+    left: 200px;
 }
 
