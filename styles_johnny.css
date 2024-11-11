@@ -34,14 +34,16 @@ a:hover {
 
 .container {
     position: absolute;
-    margin: auto;
-    left: 30px;
+    top: 50%;                   /* Centers vertically */
+    left: calc(50% - 100px);    /* 100px to the left of center */
+    transform: translateY(-50%); /* Adjust for vertical centering */
 }
 
 .container2 {
     position: absolute;
-    margin: auto;
-    right: 30px;
+    top: 50%;                   /* Centers vertically */
+    left: calc(50% + 100px);    /* 100px to the right of center */
+    transform: translateY(-50%); /* Adjust for vertical centering */
 }
 
 #arrow {
