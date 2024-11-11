@@ -33,11 +33,13 @@ a:hover {
 }
 
 .container {
+    position: absolute;
     margin: auto;
     left: 30px;
 }
 
 .container2 {
+    position: absolute;
     margin: auto;
     right: 30px;
 }
