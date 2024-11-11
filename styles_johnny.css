@@ -33,9 +33,7 @@ a:hover {
 }
 
 .container {
-    margin: auto;
     position: relative;
-    left: 50px;
 }
 
 #arrow {
@@ -43,5 +41,7 @@ a:hover {
     height: auto;
     transform-origin: center center; /* Sets the rotation point to the center */
     position: absolute;
+    margin: auto;
+    left: 50px;
 }
 
