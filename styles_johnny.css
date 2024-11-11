@@ -10,6 +10,12 @@ html, body {
     justify-content: flex-start;
     align-items: center;
     box-sizing: border-box;
+
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 a:link, a:visited, a:active {
@@ -25,3 +31,15 @@ a:hover {
     font-size: 45px;
     margin-top: 5%;
 }
+
+.container {
+    position: relative;
+}
+
+#arrow {
+    width: 100px;
+    height: auto;
+    transform-origin: center center; /* Sets the rotation point to the center */
+    position: absolute;
+}
+
