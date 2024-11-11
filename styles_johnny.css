@@ -33,7 +33,9 @@ a:hover {
 }
 
 .container {
+    margin: auto;
     position: relative;
+    left: 50px;
 }
 
 #arrow {
