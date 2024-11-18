@@ -19,11 +19,13 @@ html, body {
 }
 
 a:link, a:visited, a:active {
-  color: #1ABEFF;
+  /* color: #1ABEFF; */
+    color: #FF7B00;
 }
 
 a:hover {
-  color: #78D9FF;
+  /* color: #78D9FF; */
+    color: #FF7B00;
 }
 
 
