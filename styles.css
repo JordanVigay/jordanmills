@@ -171,8 +171,8 @@ a:hover {
 }
 
 @font-face {
-    font-family: roboto;
-    src: url("fonts/roboto/Roboto-Regular.ttf");
+    font-family: century gothic;
+    /*src: url("fonts/roboto/Roboto-Regular.ttf");*/
 }
 
 @media only screen and (max-width: 1170px) {
