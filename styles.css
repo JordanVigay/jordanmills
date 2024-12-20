@@ -130,7 +130,7 @@ a:hover {
         transform: scale(1.1); /* Slight zoom on hover */
     }
 
-#johnny-btn {;
+#johnny-btn {
     width: 135px; /* Adjust size as necessary */
     height: 135px; /* Adjust size as necessary */
     z-index: 1001;
@@ -141,6 +141,12 @@ a:hover {
     #johnny-btn:hover {
         transform: scale(1.2); /* Slight zoom on hover */
     }
+
+#jan23post {
+    width: 400px; /* Adjust size as necessary */
+    height: 400px; /* Adjust size as necessary */
+    z-index: 1001;
+}
 
 .bookings_title {
     color: white;
