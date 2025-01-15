@@ -136,6 +136,9 @@ a:hover {
     z-index: 1001;
     transition: transform 1s ease;
     cursor: pointer;
+    display: block;
+      margin-left: auto;
+      margin-right: auto;
 }
 
     #johnny-btn:hover {
@@ -146,6 +149,9 @@ a:hover {
     width: 550px; /* Adjust size as necessary */
     height: 550px; /* Adjust size as necessary */
     z-index: 1001;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .bookings_title {
