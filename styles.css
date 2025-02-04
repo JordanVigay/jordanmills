@@ -146,8 +146,8 @@ a:hover {
     }
 
 #jan23post {
-    width: 550px; /* Adjust size as necessary */
-    height: 550px; /* Adjust size as necessary */
+    width: 400px; /* Adjust size as necessary */
+    height: 560px; /* Adjust size as necessary */
     z-index: 1001;
     display: block;
     margin-left: auto;
